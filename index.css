@@ -3,8 +3,138 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "poppins";
 }
 html,body{
     width: 100%;
     height: 100%;
+}
+.main{
+    width:100%;
+    min-height: 100vh;
+    background-color: purple;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding: 30px 10px;
+    position: relative;
+}
+.cursor{
+    position: absolute;
+    pointer-events: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: yellow;
+    z-index: 10;
+    transition: all .04s 0s ease-in-out
+}
+
+/* team code */
+.main .team_container{
+    /* background-color: orangered; */
+    background-image: linear-gradient(240deg, #f6d365 0%, #fda085 100%);
+    width: 100%;
+    /* height: 60%; */
+    padding: 6px 7vw;
+}
+.main .team_container h1{
+    font-size: 4vw;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-align: center;
+}
+.team_container .team{
+    width:100%;
+    height: 11%;
+    background-color: wheat;
+    margin-top: 2px ;
+    padding:3px 1vw ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between ;
+    transition: all .5s 0s ease-in-out;
+    position: relative;
+}
+.team_container .team:hover{
+    background-color: blueviolet;
+}
+.team_container .team:hover .inner h1:nth-of-type(1){
+    color:orangered
+}
+.team .inner{
+    width: 70%;
+    height: 90%;
+    /* background-color: yellow; */
+    display: flex;
+    align-items: center;
+    gap: 10vw;
+}
+.team .inner h1{
+    color: transparent;
+    -webkit-text-stroke: 2px black;
+    transition: all .7s 0s ease-in-out;
+}
+.team .inner h2{
+    white-space: nowrap;
+    font-size: 2.5vw;
+}
+.team>h2{
+    font-size: 2.5vw;
+    font-weight: 800;
+    color:rgb(97, 93, 88)
+}
+.team img{
+    position: absolute;
+    width: 200px;
+    height : 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    z-index: 1;
+    top: -56px;
+    left: 57%;
+    display: none;
+    transition: all 1.5s 0s ease-in-out;
+}
+/* team code end here */
+
+.main .swiper{
+    width:100%;
+    height: 70vh;
+    /* background-color: yellow; */
+    background-image: linear-gradient(240deg, #f6d365 0%, #fda085 100%);
+}
+.swiper h2{
+    text-align: center;
+    font-size: 3vw;
+    font-weight: 770;
+}
+.swiper .swiper-wrapper{
+    width:100%;
+    height:100%;
+}
+.swiper-slide .treading_product{
+    width: 100%;
+    height:100%;
+    /* background-color: black; */
+    padding: 6px
+}
+.swiper .swiper-wrapper .swiper-slide{
+    height: 84%;
+    background-color: #fff;
+}
+.swiper-slide .treading_product img{
+    width:100%;
+    height: 75%;
+    object-fit: cover;
+    object-position: center;
+}
+.swiper-slide h2{
+    /* background-color: pink; */
+    font-size: 2vw;
+    color: rgb(184, 130, 29);
+    line-height: 37px;
 }
