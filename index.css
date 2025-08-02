@@ -23,6 +23,22 @@ html,body{
     padding: 10px 2vw;
     position: relative;
 }
+.main .again_go_to_top{
+    width:40px;
+    height:40px;
+    border-radius: 50%;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    position: fixed;
+    bottom: 5vh;
+    right: 2vw;
+    background-color: black;
+    z-index: 1999
+}
+.again_go_to_top i{
+    color: white;
+}
 .cursor{
     padding: 0.1px 0px;
     position: fixed;
@@ -65,7 +81,7 @@ nav .menu{
     transition: all .35s 0s ease-in-out;
 }
 nav .menu:hover{
-    box-shadow: 4px 5px 10px rgb(147, 193, 70);
+    box-shadow: 7px 9px 10px rgb(201, 28, 227);
 }
 nav button i{
     margin-left: 6px;
@@ -239,7 +255,8 @@ nav button i{
     align-content: center;
     justify-content: center;
     flex-wrap: wrap;
-    gap:10px
+    gap:10px;
+    margin-top: 4vh;
 }
 .product .card{
     min-width: 300px;
@@ -353,7 +370,7 @@ nav button i{
     object-position: center;
     z-index: 1;
     top: -56px;
-    left: 57%;
+    left: 63%;
     opacity: 0;
     pointer-events: none;
     transition: all 1s 0s ease-in-out;
@@ -367,8 +384,9 @@ nav button i{
 .main .swiper{
     width:100%;
     height: 70vh;
+    margin-top: 4vh;
     /* background-color: yellow; */
-    background-image: linear-gradient(240deg, #f6d365 0%, #fda085 100%);
+    background-image: linear-gradient(to left, #f6d365 0%, #fda085 100%);
 }
 .swiper h2{
     text-align: center;
