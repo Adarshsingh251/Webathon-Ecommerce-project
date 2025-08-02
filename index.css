@@ -8,34 +8,292 @@
 html,body{
     width: 100%;
     height: 100%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 .main{
     width:100%;
     min-height: 100vh;
-    background-color: purple;
-    display: flex;
+    background-image: linear-gradient(to top, #c471f5 0%, #fa71cd 100%);
+    /* display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 40px;
-    padding: 30px 10px;
+    gap: 40px; */
+    padding: 10px 2vw;
     position: relative;
 }
 .cursor{
-    position: absolute;
+    padding: 0.1px 0px;
+    position: fixed;
     pointer-events: none;
     width: 20px;
     height: 20px;
     border-radius: 50%;
     background-color: yellow;
-    z-index: 10;
-    transition: all .04s 0s ease-in-out
+    z-index: 999;
+    transition: all .04s 0s ease-in-out;
+    transition: transform 0.4s ease, background 0.3s ease;
 }
+
+/* navbar start*/
+nav{
+    width:100%;
+    height: 7vh;
+    /* background-color: rgb(0, 128, 102); */
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+nav button{
+    padding: 6px 7px;
+    border-radius: 10px;
+    transition: all 1.2s 0s ease-in-out;
+}
+.company_name{
+     padding: 2px 25px;
+    font-size: 1.34rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: orangered;
+}
+.company_name:nth-of-type(1):first-letter{
+    color: rgb(196, 11, 196);
+}
+nav .menu{
+    transition: all .35s 0s ease-in-out;
+}
+nav .menu:hover{
+    box-shadow: 4px 5px 10px rgb(147, 193, 70);
+}
+nav button i{
+    margin-left: 6px;
+}
+.main .nav_part, .nav_part {
+  width: 65%;
+  /* height: 80vh; */
+  border-radius: 15px;
+  /* background-color: yellow; */
+ background-image: linear-gradient(to left, #ddd6f3 0%, #faaca8 100%, #faaca8 100%);
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translateX(110%);
+  transition: transform 0.5s ease-in-out;
+  z-index: 99;
+}
+.nav_part.active {
+  transform: translateX(0%);
+}
+.nav_part .closebtn{
+    width:100%;
+    /* background-color: tan; */
+    padding: 3px 3px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+.nav_part .info{
+    width:100%;
+    padding: 2px 1vw;
+    font-size: 1.6vw;
+    line-height: 28px;
+    margin-bottom: 2vh;
+}
+.nav_part .nav_transition{
+    width:100%;
+    /* height: 15vh; */
+    background-color: yellowgreen;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    overflow:hidden ;
+    transition: all 0.5s 0s ease-in-out;
+}
+.nav_part .nav_transition:nth-last-child(1){
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+    /* background-color: #fff; */
+}
+.nav_transition a{
+    width:100%;
+    text-decoration: none;
+    /* font-size: 8vw; */
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: center; */
+    flex-direction: row-reverse;
+    text-transform: uppercase;
+    padding: 1.5vh 1.5vw
+}
+.nav_transition a i{
+    width: 40px;
+    height: 40px;
+    font-weight: 900;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    color: black;
+}
+.nav_transition h2{
+    font-size: 7vw;
+    line-height:49px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: all 0.5s 0s ease-in-out;
+}
+.nav_transition:hover{
+    background-color: #fe5196;
+    /* background: linear-gradient(to left, #f77062 0%, #fe5196 100%); */
+}
+.nav_transition:hover h2{
+    margin-bottom: 6vh;
+
+}
+/* navbar code end */
+
+/* landing code start*/
+.main .landing{
+    width:100%;
+    min-height: 90vh;
+    /* background-color: khaki; */
+    padding: 1px 0px
+}
+.landing h2{
+    color: #8703d3;
+    text-align: center;
+    font-size: 6vw;
+    text-transform: capitalize;
+    line-height: 12vh;
+    margin-top: 4vh;
+}
+.landing p{
+    font-size: 2.3vw;
+    text-align: center;
+    margin-top: 8vh;
+    font-weight: 500;
+    color: #21248a
+}
+.landing .landing_btn{
+    width:100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5vh;
+}
+.landing .landing_btn button{
+    padding: 9px 5.7vw;
+    font-size: 2.5vw;
+    border-radius: 45px;
+    position: relative;
+    /* transition: all 1s 0s ease-in-out; */
+    overflow: hidden;
+    z-index: 8;
+    font-weight: 600;
+    border: 2px solid black;
+    color:transparent;
+    -webkit-text-stroke: 1.4px black;
+    transition: all 1s 0s ease-in-out;
+}
+.landing .landing_btn button::after{
+    content:"";
+    width:100%;
+    height:100%;
+    /* background-color: rgb(229, 126, 229); */
+    background-image: linear-gradient(to left, #00c6fb 30%, #005bea 80%);
+    position: absolute;
+    bottom:0px;
+    left:-100%;
+    transition: all 1s 0s ease-in-out;
+    z-index: -1;
+}
+.landing .landing_btn button:hover::after{
+    left:0%;
+}
+.landing .landing_btn button:hover{
+    color: yellow;
+}
+.landing .landing_img_swiper{
+    width:100%;
+    height: 70vh;
+    /* background-color: #fff; */
+    margin-top: 5vh;
+    overflow:hidden;
+}
+.landing_img_swiper .swiper-slide img{
+    width:100%;
+    height:100%;
+    object-fit: contain;
+    object-position: center;
+}
+/* landing code end */
+
+/* product code start */
+.main .product{
+    width:100%;
+    min-height: 100vh;
+    background-color: pink;
+    padding: 10px 2vw;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap:10px
+}
+.product .card{
+    min-width: 300px;
+    max-width: 301px;
+    height: 420px;
+    background-color: #fff;
+    padding: 4px 7px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.card img{
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    object-position: center;
+    transition: all .7s 0s ease-in-out;
+}
+.card:hover img{
+    transform: scale(1.1);
+}
+.card h2{
+    text-align: center;
+}
+.card button{
+    width:100%;
+    padding: 9px;
+    margin-top: 4px;
+    border-radius: 15px;
+    position: relative;
+    z-index: 8;
+    overflow: hidden;
+}
+.product .card  button::after{
+    content:"";
+    width:100%;
+    height:100%;
+    /* background-color: rgb(229, 126, 229); */
+    background-image: linear-gradient(to left, #00c6fb 30%, #005bea 80%);
+    position: absolute;
+    bottom:0px;
+    left:-100%;
+    transition: all 1s 0s ease-in-out;
+    z-index: -1;
+}
+.product .card button:hover::after{
+    left:0%;
+}
+/* product code end */
 
 /* team code */
 .main .team_container{
     /* background-color: orangered; */
     background-image: linear-gradient(240deg, #f6d365 0%, #fda085 100%);
+    margin-top: 3vh;
     width: 100%;
     /* height: 60%; */
     padding: 6px 7vw;
@@ -96,8 +354,13 @@ html,body{
     z-index: 1;
     top: -56px;
     left: 57%;
-    display: none;
-    transition: all 1.5s 0s ease-in-out;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 1s 0s ease-in-out;
+}
+.team:hover img,.team.touch-visible img {
+  opacity: 1;
+  pointer-events: auto;
 }
 /* team code end here */
 
@@ -138,3 +401,75 @@ html,body{
     color: rgb(184, 130, 29);
     line-height: 37px;
 }
+
+/* testimonial start  */
+.testimonials{
+    margin-top: 2vh;
+    width:100%;
+    height:100%;
+    /* background-color: rgb(57, 55, 56); */
+    background-image: linear-gradient(to top, #f77062 0%, #fe5196 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:9px;
+}
+.test_info{
+    width:45%;
+    height:30%;
+    /* background-color: rebeccapurple; */
+    color:rgb(14, 55, 240);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* padding: 0px 0.4vw; */
+    text-align: center;
+    margin-top: 3rem;
+    text-transform: capitalize;
+}
+.test-swiper p:first-child{
+    text-align: center;
+    color:rgb(240, 116, 14);
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+.test-swiper{
+    width:90%;
+    height:60%;
+    /* background-color: yellow; */
+    padding:10px;
+    overflow: hidden;
+}
+.test-swiper .swiper-slide{
+    width:50%;
+    height:100%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 6px 3vw;
+    text-align: center;
+}
+.test-swiper img{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+}
+.test-swiper .swiper-slide h2{
+    margin-top: 6px;
+    font-size: 1.3rem;
+}
+.test-swiper .swiper-slide h3{
+    font-size: 1rem;
+    color: rgb(221, 141, 36);
+}
+.test-swiper .swiper-slide p{
+    margin-top: 1rem;
+    font-size: 1rem;
+    font-weight: 400;
+}
+/* teastimonial end */

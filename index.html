@@ -6,17 +6,271 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ecommerce - site</title>
     <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="team_responsive.css">
+    <link rel="stylesheet" href="team_responsive_400.css">
     <link
   rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
 />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
     <div class="main">
         <div class="cursor"></div>
-        <section class="team_container">
+
+         <nav>
+            <button class="company_name">Snapora</button>
+            <button class="menu" id="menuBtn">Menu<i class="fa-solid fa-bars" id="menuIcon"></i></button>
+             <div class="nav_part" id="navPanel">
+                <div class="closebtn">
+                    <button id="closeBtn">close <i class="fa-solid fa-xmark" ></i></button>
+                </div>
+                <div class="info">
+                    <p>Your one-stop online store for fashion, electronics,<br> home essentials, and more — delivered<br> to your door with a click.</p>
+                </div>
+                <div class="nav_transition">
+                    <a href="#landing" class="anchor"><i class="fa-solid fa-arrow-right"></i></a>
+                    <h2>Home</h2>
+                </div>
+                <div class="nav_transition">
+                    <a href="#product" class="anchor"><i class="fa-solid fa-arrow-right"></i></a>
+                    <h2>product</h2>
+                </div>
+                <div class="nav_transition">
+                    <a href="#results" class="anchor"><i class="fa-solid fa-arrow-right"></i></a>
+                    <h2>testimonial</h2>
+                </div>
+                <div class="nav_transition">
+                    <a href="#team_container" class="anchor"><i class="fa-solid fa-arrow-right"></i></a>
+                    <h2>contact</h2>
+                </div>
+            </div>
+         </nav>
+
+         <div class="landing" id="landing">
+            <h2>"Shop Smart.<br> Snap Everything."</h2>
+            <p>“From trending fashion to top electronics,<br>  Snapora brings everything you <br> love—fast, affordable, and<br>  hassle-free.”</p>
+            <div class="landing_btn">
+                <button>Shop Now !</button>
+            </div>
+            <div class="landing_img_swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="./assets/banner 1.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./assets/banner 2.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./assets/banner 3.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./assets/banner 4.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./assets/banner 5.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+         </div>
+        
+         <section class="product"  id="product">
+            <div class="card">
+                <img src="./assets/product/product 1.jpg" alt="">
+                <h2>Fridge</h2>
+                <h2>Price : Rs 37,999</h2>
+                <button>Buy Now</button>
+            </div>
+            <div class="card">
+                <img src="./assets/product/product 2.jpg" alt="">
+                <h2>HeadPhone</h2>
+                <h2>Price : Rs 1799</h2>
+                <button>Buy Now</button>
+            </div>
+            <div class="card">
+                <img src="./assets/product/product 3.png" alt="">
+                <h2>T.V</h2>
+                <h2>Price : Rs 47,899</h2>
+                <button>Buy Now</button>
+            </div>
+            <div class="card">
+                <img src="./assets/product/product 4.jpg" alt="">
+                <h2>Ultra Fridge</h2>
+                <h2>Price : Rs 28,999</h2>
+                <button>Buy Now</button>
+            </div>
+            <div class="card">
+                <img src="./assets/product/product 5.jpg" alt="">
+                <h2>Selling Fan</h2>
+                <h2>Price : Rs 1799</h2>
+                <button>Buy Now</button>
+            </div>
+            <div class="card">
+                <img src="./assets/product/product 6.jpg" alt="">
+                <h2>Samsung phone</h2>
+                <h2>Price : Rs 17,999</h2>
+                <button>Buy Now</button>
+            </div>
+            <div class="card">
+                <img src="./assets/product/product 7.jpg" alt="">
+                <h2>Iphone</h2>
+                <h2>Price : Rs 1,50,000</h2>
+                <button>Buy Now</button>
+            </div>
+            <div class="card">
+                <img src="./assets/product/product 8.jpg" alt="">
+                <h2>Labubu</h2>
+                <h2>Price : Rs 299</h2>
+                <button>Buy Now</button>
+            </div>
+         </section>
+
+
+        <section class="swiper">
+            <h2>Treading product</h2>
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="treading_product">
+                        <img src="./assets/product/product 1.jpg" alt="">
+                        <h2>Fridge</h2>
+                        <h2>Price: Rs 37,999</h2>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="treading_product">
+                        <img src="assets/product/product 2.jpg" alt="">
+                        <h2>Headphone</h2>
+                        <h2>Price: Rs 1,799</h2>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="treading_product">
+                        <img src="./assets/product/product 3.png" alt="">
+                        <h2>T.V</h2>
+                        <h2>Price: Rs 47,999</h2>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="treading_product">
+                        <img src="./assets/product/product 4.jpg" alt="">
+                        <h2>Ultra Fridge</h2>
+                        <h2>Price: Rs 28,999</h2>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="treading_product">
+                        <img src="./assets/product/product 5.jpg" alt="">
+                        <h2>Selling Fan</h2>
+                        <h2>Price: Rs 1,799</h2>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="treading_product">
+                        <img src="./assets/product/product 6.jpg" alt="">
+                        <h2>Samsung phone</h2>
+                        <h2>Price: Rs 17,999</h2>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="treading_product">
+                        <img src="./assets/product/product 7.jpg" alt="">
+                        <h2>Iphone</h2>
+                        <h2>Price: Rs 1,50,000</h2>
+                    </div>
+                </div>
+                 <div class="swiper-slide">
+                    <div class="treading_product">
+                        <img src="./assets/product/product 8.jpg" alt="">
+                        <h2>Labubu</h2>
+                        <h2>Price: Rs 299</h2>
+                    </div>
+                </div>
+                 <div class="swiper-slide">
+                    <div class="treading_product">
+                        <img src="./assets/product/product 3.png" alt="">
+                        <h2>T.V</h2>
+                        <h2>Price: Rs 47,999</h2>
+                    </div>
+                </div>
+                 <div class="swiper-slide">
+                    <div class="treading_product">
+                        <img src="./assets/product/product 6.jpg" alt="">
+                        <h2>Samsung phone</h2>
+                        <h2>Price: Rs 17,999</h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="testimonials" id="results">
+            <div class="test_info">
+                <p>our testimonials
+               <br>what clients say about us</p>
+            </div>
+            <div class="test-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide s1">
+                        <img src="https://plus.unsplash.com/premium_photo-1669703777437-27602d656c27?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8ZmFrZSUyMG1hbnxlbnwwfHwwfHx8MA%3D%3D"
+                            alt="">
+                        <h2>Deirdre Elizabeth</h2>
+                        <h3>property owner</h3>
+                        <p>It is a long established fact that a reader will be distracted by the readable content of a
+                            page when looking at its was layout.The point of using Lorem Ipsum is that it has a
+                            more-or-less normal distribution.</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="https://plus.unsplash.com/premium_photo-1669703777428-48a39ccfe8cb?w=200&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1pbi1zYW1lLXNlcmllc3w1fHx8ZW58MHx8fHx8"
+                            alt="">
+                        <h2>Don khan</h2>
+                        <h3>property owner</h3>
+                        <p>"Excellent building with top-notch facilities, friendly management, timely maintenance, and a
+                            peaceful environment. Highly recommend to future tenants!".</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="https://plus.unsplash.com/premium_photo-1669704099220-055869422c3a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDF8fHxlbnwwfHx8fHw%3D"
+                            alt="">
+                        <h2>Shreiya Singh</h2>
+                        <h3>property owner</h3>
+                        <p>"Great experience overall, the building is clean, secure, and well-managed. Maintenance
+                            requests are handled quickly and staff is courteous."</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="https://images.unsplash.com/photo-1710250201394-47f597366ffd?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGZha2UlMjBtYW58ZW58MHx8MHx8fDA%3D"
+                            alt="">
+                        <h2>SRK bhai</h2>
+                        <h3>property owner</h3>
+                        <p>"Living here has been wonderful! The property is beautifully maintained, quiet, and the
+                            landlord is always responsive and professional."</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="https://images.unsplash.com/photo-1724710151888-d9f0607f344a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDI5fHx8ZW58MHx8fHx8"
+                            alt="">
+                        <h2>Deirdre Elizabeth</h2>
+                        <h3>property owner</h3>
+                        <p>"Decent place to stay, good location, amenities are fair. Some delays in repairs, but
+                            management usually resolves issues politely."</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="https://images.unsplash.com/photo-1552337557-45792b252a2e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzF8fGZha2UlMjBtYW58ZW58MHx8MHx8fDA%3D"
+                            alt="">
+                        <h2>Deirdre Elizabeth</h2>
+                        <h3>property owner</h3>
+                        <p>"The apartment is spacious and well-lit. Owner is very understanding and helpful whenever
+                            minor issues come up. Highly recommend."</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="https://plus.unsplash.com/premium_photo-1671464389911-dd0d8a06f2d3?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDEyfHx8ZW58MHx8fHx8"
+                            alt="">
+                        <h2>Rekha yadav</h2>
+                        <h3>property owner</h3>
+                        <p>"Loved the experience! Clean premises, secure environment, helpful building staff, and the
+                            owner always made sure everything was smooth."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="team_container" id="team_container">
             <h1>Our Team</h1>
             <div class="team">
                 <div class="inner">
@@ -31,129 +285,10 @@
                     <h1>02</h1>
                     <h2>Pankaj</h2>
                 </div>
-                <h2>CEO</h2>
+                <h2>COO</h2>
                 <img src="https://images.unsplash.com/photo-1583195763986-0231686dcd43?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8bWFuJTIwcGhvdG98ZW58MHx8MHx8fDA%3D" alt="">
             </div>
-            <div class="team">
-                <div class="inner">
-                    <h1>03</h1>
-                    <h2>College</h2>
-                </div>
-                <h2>MANAGER</h2>
-                <img src="https://images.unsplash.com/photo-1584999734482-0361aecad844?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fG1hbiUyMHBob3RvfGVufDB8fDB8fHww" alt="">
-            </div>
-            <div class="team">
-                <div class="inner">
-                    <h1>04</h1>
-                    <h2>Thakur</h2>
-                </div>
-                <h2>TEAM DELEAR</h2>
-                <img src="https://media.istockphoto.com/id/1303206644/photo/portrait-of-smiling-caucasian-man-pose-in-office.webp?a=1&b=1&s=612x612&w=0&k=20&c=akRiOpll6XSlduMj09n9Zm11SsRpAjtdr85GbGJ99uM=" alt="">
-            </div>
         </section>
-
-        <!-- <section class="marquee_container">
-            <h1>Treading Product</h1>
-            <marquee behavior="" direction="left" scrollamount="20" loop="infinite">
-                <div class="product_container">
-                    <div class="treading_product">
-                        <img src="" alt="">
-                    </div>
-                    <div class="treading_product">
-                        <img src="" alt="">
-                    </div>
-                    <div class="treading_product">
-                        <img src="" alt="">
-                    </div>
-                    <div class="treading_product">
-                        <img src="" alt="">
-                    </div>
-                    <div class="treading_product">
-                        <img src="" alt="">
-                    </div>
-                    <div class="treading_product">
-                        <img src="" alt="">
-                    </div>
-                </div>
-            </marquee>
-        </section> -->  
-
-        <section class="swiper">
-            <h2>Treading product</h2>
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <div class="treading_product">
-                        <img src="https://media.istockphoto.com/id/1134390236/photo/business-colleagues-discussing-a-project.webp?a=1&b=1&s=612x612&w=0&k=20&c=lNmn5w8In7CC-04zaqxKtB13jRO9bOHmR-Qm-HuPTeA=" alt="">
-                        <h2>Product Name</h2>
-                        <h2>Price 1</h2>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="treading_product">
-                        <img src="https://media.istockphoto.com/id/1134390236/photo/business-colleagues-discussing-a-project.webp?a=1&b=1&s=612x612&w=0&k=20&c=lNmn5w8In7CC-04zaqxKtB13jRO9bOHmR-Qm-HuPTeA=" alt="">
-                        <h2>Product Name</h2>
-                        <h2>Price 2</h2>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="treading_product">
-                        <img src="https://media.istockphoto.com/id/1134390236/photo/business-colleagues-discussing-a-project.webp?a=1&b=1&s=612x612&w=0&k=20&c=lNmn5w8In7CC-04zaqxKtB13jRO9bOHmR-Qm-HuPTeA=" alt="">
-                        <h2>Product Name</h2>
-                        <h2>Price 3</h2>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="treading_product">
-                        <img src="https://media.istockphoto.com/id/1134390236/photo/business-colleagues-discussing-a-project.webp?a=1&b=1&s=612x612&w=0&k=20&c=lNmn5w8In7CC-04zaqxKtB13jRO9bOHmR-Qm-HuPTeA=" alt="">
-                        <h2>Product Name</h2>
-                        <h2>Price 4</h2>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="treading_product">
-                        <img src="https://media.istockphoto.com/id/1134390236/photo/business-colleagues-discussing-a-project.webp?a=1&b=1&s=612x612&w=0&k=20&c=lNmn5w8In7CC-04zaqxKtB13jRO9bOHmR-Qm-HuPTeA=" alt="">
-                        <h2>Product Name</h2>
-                        <h2>Price</h2>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="treading_product">
-                        <img src="https://media.istockphoto.com/id/1134390236/photo/business-colleagues-discussing-a-project.webp?a=1&b=1&s=612x612&w=0&k=20&c=lNmn5w8In7CC-04zaqxKtB13jRO9bOHmR-Qm-HuPTeA=" alt="">
-                        <h2>Product Name</h2>
-                        <h2>Price</h2>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="treading_product">
-                        <img src="https://media.istockphoto.com/id/1134390236/photo/business-colleagues-discussing-a-project.webp?a=1&b=1&s=612x612&w=0&k=20&c=lNmn5w8In7CC-04zaqxKtB13jRO9bOHmR-Qm-HuPTeA=" alt="">
-                        <h2>Product Name</h2>
-                        <h2>Price</h2>
-                    </div>
-                </div>
-                 <div class="swiper-slide">
-                    <div class="treading_product">
-                        <img src="https://media.istockphoto.com/id/1134390236/photo/business-colleagues-discussing-a-project.webp?a=1&b=1&s=612x612&w=0&k=20&c=lNmn5w8In7CC-04zaqxKtB13jRO9bOHmR-Qm-HuPTeA=" alt="">
-                        <h2>Product Name</h2>
-                        <h2>Price</h2>
-                    </div>
-                </div>
-                 <div class="swiper-slide">
-                    <div class="treading_product">
-                        <img src="https://media.istockphoto.com/id/1134390236/photo/business-colleagues-discussing-a-project.webp?a=1&b=1&s=612x612&w=0&k=20&c=lNmn5w8In7CC-04zaqxKtB13jRO9bOHmR-Qm-HuPTeA=" alt="">
-                        <h2>Product Name</h2>
-                        <h2>Price</h2>
-                    </div>
-                </div>
-                 <div class="swiper-slide">
-                    <div class="treading_product">
-                        <img src="https://media.istockphoto.com/id/1145064928/photo/tourist-riding-camel-in-desert.webp?a=1&b=1&s=612x612&w=0&k=20&c=LrtNkECIRlOYDtWlGQ_96nHVd7b9BY1EiX9BHXXm-n8=" alt="">
-                        <h2>Product Name</h2>
-                        <h2>Price</h2>
-                    </div>
-                </div>
-            </div>
-        </section>
-
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
